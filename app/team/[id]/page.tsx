@@ -1,8 +1,12 @@
 import React from 'react';
 
-const DynamicTeamPage = () => {
+const DynamicTeamPage = async ({ params }) => {
+
+  //
+  const id = { await parmas }.id;
+
   return (
-    <div></div>
+    <div className='text-white'>DynamicTeamPage {id}</div> 
   );
 }
 export default DynamicTeamPage;
