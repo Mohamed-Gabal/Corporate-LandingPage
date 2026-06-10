@@ -1,5 +1,4 @@
 import Logo from '@/components/Helper/Logo';
-import React from 'react';
 import { NAV_LINKS } from '@/constant/constant';
 import Link from 'next/link';
 import { HiMiniBars3BottomRight } from 'react-icons/hi2';
@@ -18,7 +17,7 @@ const Nav = ({ openNav }: NavProps) => {
         <Logo />
 
         {/* Nav links */}
-        <div className='hidden lg:flex items-center space-x-10'>
+        <div className='hidden lg:flex items-center space-x-10 text-white'>
           {NAV_LINKS.map((link) => (
             <Link
               href={link.url}
