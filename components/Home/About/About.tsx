@@ -1,5 +1,6 @@
 import Image from "next/image";
 import AboutProgress from "./AboutProgress";
+import SectionHeading from "@/components/SectionHeading ";
 
 const About = () => {
   return (
@@ -18,10 +19,8 @@ const About = () => {
         </div>
         {/* Test Content */}
         <div>
-          {/* SubHeading */}
-          <p className="text-lg text-blue-700 font-medium -tracking-widest">About Us</p>
-          {/* Main Heading */}
-          <h1 className="text-3xl md:text-5xl font-bold mt-4">Innovative solutions for digital success</h1>
+          {/* Import SectionHeading Component */}
+          <SectionHeading subTitle="About Us" title="Innovative solutions for digital success" titleColor="#000000" />
           {/* Description */}
           <p className="ml-0 md:ml-12 md:mt-10 mt-5 text-black text-sm md:text-base font-semibold leading-loose">
             Payment solutions enable businesses to accept payments Payment

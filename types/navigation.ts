@@ -18,3 +18,16 @@ export type ServiceItem = {
   image: string;
   icon: string;
 }
+
+export type WorkProcessItem = {
+  id: number;
+  number: string;
+  title: string;
+  isExtraClass: boolean;
+}
+
+export type BlogItem = {
+  id: number;
+  image: string;
+  title: string;
+}

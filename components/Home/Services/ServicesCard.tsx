@@ -1,11 +1,11 @@
 import Image from 'next/image';
+import { ServiceItem } from '@/types/navigation';
 
-type Props = {
-  image: string;
-  icon: string;
-}
+type ServicesCardProps = Omit<ServiceItem, 'id'>;
 
-const ServicesCard = ({ icon, image }: Props) => {
+
+
+const ServicesCard = ({ icon, image }: ServicesCardProps) => {
   return (
     <div className='rounded-lg group overflow-hidden bg-white'>
       <Image src={image} alt='Services image' width={300} height={179} />
