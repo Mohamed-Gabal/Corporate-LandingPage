@@ -1,7 +1,8 @@
 
 import { FaBullseye } from "react-icons/fa"
+import { FaFacebookF, FaInstagram, FaYoutube } from "react-icons/fa";
 import { HiOutlineChartBar } from "react-icons/hi2"
-import { NavLink, ProgressItem, ServiceItem, WorkProcessItem, BlogItem } from "@/types/navigation";
+import { NavLink, ProgressItem, ServiceItem, WorkProcessItem, BlogItem, ContactInfoItem, SocialLink } from "@/types/navigation";
 
 
 // Links For Navbar
@@ -53,3 +54,25 @@ export const Blog_Data: BlogItem[] = [
   {id: 2, image: '/images/b2.png', title: 'These cases are many simple and easy'},
   {id: 3, image: '/images/b1.png', title: 'Standard of chunk lorem Ipsum Our Company'},
 ]
+
+// Contact Information
+export const Contact_Info: ContactInfoItem[] = [
+  {id: 1, label: "Call Now", value: "+1 (123) 456-7890"},
+  {id: 2, label: "E-mail Now", value: "example@email.com"},
+  {id: 3, label: "Address", value: "123 Main Street, City, State 12345"},
+]
+
+// Footer Social Links
+export const Footer_Social_Links: SocialLink[] = [
+  {id: 1, icon: FaFacebookF, hoverColor: "hover:bg-blue-600"},
+  {id: 2, icon: FaInstagram, hoverColor: "hover:bg-red-600"},
+  {id: 3, icon: FaYoutube, hoverColor: "hover:bg-pink-600"},
+]
+
+// Footer Services
+export const Footer_Services: string[] = [
+  "UI Design",
+  "UX Design",
+  "Web App",
+  "Digital Marketing",
+];

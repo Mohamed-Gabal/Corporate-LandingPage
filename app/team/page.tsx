@@ -2,9 +2,7 @@ import React from 'react'
 
 const TeamPage = () => {
   return (
-    <div>
-      
-    </div>
+    <div></div>
   )
 }
 export default TeamPage;

@@ -1,12 +1,14 @@
-import React from 'react';
 
-const DynamicTeamPage = async ({ params }) => {
 
-  //
-  const id = { await parmas }.id;
+type Props = {
+  params: Promise<{ id: string }>;
+}
+
+const DynamicTeamPage = async ({ params }: Props) => {
+  const { id } = await params;
 
   return (
-    <div className='text-white'>DynamicTeamPage {id}</div> 
+    <div className='text-white'>DynamicTeamPage {id}</div>
   );
 }
 export default DynamicTeamPage;

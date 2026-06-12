@@ -31,3 +31,15 @@ export type BlogItem = {
   image: string;
   title: string;
 }
+
+export type ContactInfoItem = {
+  id: number;
+  label: string;
+  value: string;
+}
+
+export type SocialLink = {
+  id: number;
+  icon: IconType;
+  hoverColor: string;
+}

@@ -2,6 +2,10 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import NavContainer from "@/components/Home/Navbar/NavContainer";
+import Footer from "@/components/Home/Footer/Footer";
+import ScrollToTop from "@/components/Helper/ScrollToTop";
+import AOSInit from "@/components/Helper/AOSInit";
+
 
 const font = Inter({
   weight: ["400", "600", "700"],
@@ -21,8 +25,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${font.className} antialiased bg-[#1f242c]`}>
+        <AOSInit />
         <NavContainer />
         {children}
+        <Footer />
+        <ScrollToTop />
       </body>
     </html>
   );
